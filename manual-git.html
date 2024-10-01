@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manual Git - Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        .content-section img {
+            display: block;
+            margin: 20px auto;
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: block;
+            white-space: pre-wrap;
+            border-left: 4px solid #333;
+            margin: 10px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Manual de Git - Mi Página Personal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="git.html">Qué es Git?</a>
+    </nav>
+
+    <div class="container">
+        <h2>Manual de Git: Conceptos Básicos</h2>
+        <p>En esta entrada, exploraremos algunos de los conceptos básicos de Git, como la inicialización de un repositorio, la creación de ramas, y la conexión de tu repositorio local con un repositorio remoto en GitHub.</p>
+        
+        <div class="content-section">
+            <h3>1. Inicialización del repositorio localmente</h3>
+            <p>El primer paso para empezar a trabajar con Git es crear un repositorio local en tu máquina. Esto te permitirá rastrear los cambios de los archivos de tu proyecto.</p>
+            <p>Para inicializar un nuevo repositorio, puedes utilizar el siguiente comando:</p>
+            <code>
+                git init
+            </code>
+            <p>Este comando crea una carpeta oculta llamada <strong>.git</strong> en tu directorio de trabajo, que es donde Git almacena toda la información del historial de cambios.</p>
+            
+            <h4>Pantallazo del comando:</h4>
+            <img src="images/init-repo.png" alt="Inicialización de un repositorio en Git">
+
+            <p>Después de esto, puedes comenzar a añadir archivos y realizar commits para guardar los cambios de tu proyecto.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>2. Creación de branches</h3>
+            <p>En Git, las ramas (branches) te permiten trabajar en diferentes características o partes de tu proyecto de forma aislada. El uso de ramas facilita la colaboración y te ayuda a probar cambios antes de fusionarlos con el proyecto principal.</p>
+            <p>Para crear una nueva rama, puedes utilizar el siguiente comando:</p>
+            <code>
+                git branch entradablog-git
+            </code>
+            <p>Para cambiar a la nueva rama creada:</p>
+            <code>
+                git checkout entradablog-git
+            </code>
+            <p>Una vez hayas realizado tus cambios en la nueva rama, puedes fusionar estos cambios con la rama principal (master o main) usando el comando merge:</p>
+            <code>
+                git checkout main <br>
+                git merge entradablog-git
+            </code>
+            
+            <h4>Pantallazo del proceso de creación y fusión de ramas:</h4>
+            <img src="images/git-branch-merge.png" alt="Creación y fusión de ramas en Git">
+            
+            <p>Las ramas son útiles para trabajar en diferentes características sin afectar el código principal, permitiendo una mayor flexibilidad en el desarrollo del proyecto.</p>
+        </div>
+
+        <div class="content-section">
+            <h3>3. Agregar un repositorio remoto</h3>
+            <p>Una vez que hayas trabajado localmente en tu proyecto, puedes conectar tu repositorio local a uno remoto, como GitHub, para colaborar con otros desarrolladores y tener una copia segura de tu proyecto en la nube.</p>
+            <p>Para agregar un repositorio remoto, primero debes tener una cuenta en GitHub y crear un repositorio vacío. Luego, usa el siguiente comando para enlazar tu repositorio local con el remoto:</p>
+            <code>
+                git remote add origin https://github.com/afel2312/page_blog_personal.git
+            </code>
+            <p>Este comando enlaza tu repositorio local con el repositorio remoto en GitHub. Luego puedes empujar tus cambios con el siguiente comando:</p>
+            <code>
+                git push -u origin main
+            </code>
+            
+            
+            <p>A partir de este punto, puedes colaborar en GitHub y seguir haciendo commits y pushes para mantener tu código actualizado.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Personal</p>
+    </footer>
+</body>
+</html>

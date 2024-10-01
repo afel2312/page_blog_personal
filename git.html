@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Mi Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .content-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .content-wrapper img {
+            display: block;
+        }
+        .content-wrapper .button-container {
+            text-align: right;
+        }
+        .button-container button {
+            padding: 10px 20px;
+            background-color: #gray;
+            color: black;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .button-container button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog - Mi Página Personal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="blog.html">Blog</a>
+        <a href="git.html">Qué es Git?</a>
+    </nav>
+    <div class="container">
+        <h2>Entrada del Blog: Información sobre Git</h2>
+        <p>Git es un sistema de control de versiones distribuido que permite a los desarrolladores gestionar los cambios en el código fuente a lo largo del tiempo. Es una herramienta esencial para el trabajo colaborativo en el desarrollo de software.</p>
+        
+        <h3>¿Qué es Git?</h3>
+        <p>Git es una herramienta de control de versiones que rastrea los cambios en archivos y permite a múltiples personas colaborar en un proyecto de manera eficiente. Creado por Linus Torvalds en 2005, Git se ha convertido en una herramienta esencial para el desarrollo de software moderno.</p>
+        
+        <h3>¿Cómo funciona Git?</h3>
+        <p>Git funciona tomando instantáneas del estado actual de tus archivos (commits) y permitiendo a los desarrolladores realizar un seguimiento de los cambios a lo largo del tiempo. Cada vez que realizas un cambio significativo, puedes "commitear" esos cambios para guardarlos en el historial de versiones.</p>
+        <p>Además, Git utiliza un sistema distribuido, lo que significa que cada colaborador tiene una copia completa del repositorio en su máquina local. Esto permite trabajar en el proyecto sin conexión y luego sincronizar los cambios con un repositorio central cuando sea necesario.</p>
+
+        <h3>Objetivo principal de Git</h3>
+        <p>El objetivo principal de Git es facilitar la colaboración entre desarrolladores, permitiendo realizar un seguimiento de los cambios en un proyecto y fusionar aportes de varios colaboradores sin perder ninguna versión del código. También es útil para revertir cambios si algo sale mal.</p>
+
+        <h3>Herramientas que se pueden enlazar con Git</h3>
+        <ul>
+            <li><strong>GitHub:</strong> Plataforma de alojamiento de repositorios que permite a los usuarios compartir código y colaborar de forma remota.</li>
+            <li><strong>GitLab:</strong> Similar a GitHub, con características adicionales para la gestión de proyectos y CI/CD.</li>
+            <li><strong>Bitbucket:</strong> Otra plataforma de alojamiento que facilita la colaboración y el control de versiones.</li>
+            <li><strong>Jenkins:</strong> Herramienta de integración continua que puede trabajar en conjunto con Git para automatizar el despliegue del código.</li>
+            <li><strong>Visual Studio Code:</strong> Editor de código que se integra con Git para realizar operaciones directamente desde el entorno de desarrollo.</li>
+        </ul>
+
+        <h3>Optimización con Git</h3>
+        <p>Git permite optimizar el flujo de trabajo de desarrollo de varias maneras:</p>
+        <ul>
+            <li><strong>Colaboración Eficiente:</strong> Los desarrolladores pueden trabajar en diferentes ramas sin interferir en el trabajo de los demás, lo que permite un desarrollo paralelo.</li>
+            <li><strong>Historial de Cambios:</strong> Git proporciona un historial detallado de todos los cambios, lo que facilita rastrear errores y revertir versiones si es necesario.</li>
+            <li><strong>Trabajo Desconectado:</strong> Cada desarrollador tiene una copia completa del proyecto, lo que permite trabajar sin conexión y sincronizar los cambios cuando sea necesario.</li>
+            <li><strong>Integración Continua:</strong> Git se integra bien con herramientas de CI/CD, lo que permite desplegar cambios automáticamente y realizar pruebas con cada commit.</li>
+        </ul>
+
+        <div class="content-wrapper">
+            <img src="images/git-image.png" alt="Diagrama de Git" width="150" height="auto">
+            <div class="button-container">
+                <a href="manual-git.html">
+                    <button>Veamos un ejemplo!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Mi Página Personal</p>
+    </footer>
+</body>
+</html>
+
+
